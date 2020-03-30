@@ -1,2 +1,2 @@
 # Honey-staking
-Staking pool 
+ 
