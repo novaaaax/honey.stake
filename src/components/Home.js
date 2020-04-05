@@ -6,7 +6,7 @@ export default function Home(){
         <div style={{
             marginTop: "15px"
         }}>
-            <p>What should our home page consits of?</p>
+            <p>What should our home page consist of?</p>
         </div>
     );
 }
