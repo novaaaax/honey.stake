@@ -19,6 +19,10 @@ export default function Narbar(){
                     color: "white",
                     marginRight: "5px"
                 }}>Learn Crypto</NavLink>
+                <NavLink to="/markets" style={{
+                    color: "white",
+                    marginRight: "5px"
+                }}>Crypto Markets</NavLink>
                 <NavLink to="/about" style={{
                     color: "white",
                     marginRight: "5px"
