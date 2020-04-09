@@ -3,35 +3,45 @@ import axios from 'axios';
 
 
 export default class Signup extends React.Component {
-    constructor(props){
+    constructor(props) {
         super(props);
 
-        this.state={
+        this.state = {
             email: "",
             password: "",
             password_conformation: "",
             registrationErrors: ""
         }
         this.handleSubmit = this.handleSubmit.bind(this)
+        this.handleChange = this.handleChange.bind(this)
     }
-    handleSubmit(event){
-        
+
+    handleChange(event) {
+        console.log("handle change", event)
     }
-    render(){
-    return (
-        <div className="container column col-4 col-xs-12">
-            <div className="form-group">
-                <label className="form-label" for="input-example-1">Email</label>
-                <input className="form-input" type="text" id="input-example-1" placeholder="Email" />
-                <label className="form-label" for="input-example-1">Password</label>
-                <input className="form-input" type="text" id="input-example-1" placeholder="Password" />
-                <button
-                style={{
-                    marginTop: "10px"
-                }}
-                >Sign Up</button>
+
+    handleSubmit(event) {
+        console.log('form submitted')
+        event.preventDefault();
+    }
+    render() {
+        return (
+            <div onSubmit={this.handleSubmit} className="container column col-4 col-xs-12">
+                <form className="form-group">
+                    <label className="form-label" for="input-example-1">Email</label>
+                    <input className="form-input" type="email" name="email" value={this.state.email} id="input-example-1" onChange={this.handleChange} placeholder="Email" required />
+                    <label className="form-label" for="input-example-1">Password</label>
+                    <input className="form-input" type="password" name="password" value={this.state.password} id="input-example-1" onChange={this.handleChange} placeholder="Password" required />
+                    <label className="form-label" for="input-example-1">Confirm Password</label>
+                    <input className="form-input" type="password" name="password_confirmation" value={this.state.password_conformation} id="input-example-1" onChange={this.handleChange} placeholder="Password Confirmation" required />
+                    <button
+                        type="submit"
+                        style={{
+                            marginTop: "10px"
+                        }}
+                    >Sign Up</button>
+                </form>
             </div>
-        </div>
-    );
-            }
+        );
+    }
 }
