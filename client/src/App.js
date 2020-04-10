@@ -5,6 +5,7 @@ import Home from './components/Home';
 import Learncrypto from './components/Learncrypto';
 import Cryptomarkets from './components/Cryptomarkets';
 import About from './components/About';
+import Signup from './components/Sign-up';
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <Route path="/learncrypto" component={Learncrypto}></Route>
       <Route path="/markets" component={Cryptomarkets}></Route>
       <Route path="/about" component={About}></Route>
+      <Route path="/signup" component={Signup}></Route>
     </Switch>
     </BrowserRouter>
   );
