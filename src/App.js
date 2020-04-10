@@ -7,7 +7,6 @@ import Cryptomarkets from './components/Cryptomarkets';
 import About from './components/About';
 
 
-
 function App() {
   return (
     <BrowserRouter>
