@@ -30,7 +30,7 @@ nav.responsive-toolbar{
 
         li {
             list-style-type: none;
-            padding: 10px 20px;
+            padding: 7px 17px;
             
             .active{
                 background: #999;
@@ -47,10 +47,10 @@ nav.responsive-toolbar{
 
         }
         img{
-            margin-right: 3px;
-           
-            height: 20px;
-            width: 20px;
+            margin-right: 5px;
+           margin-top: 3px;
+            height: 27px;
+            width: 30px;
         }
     }
 
@@ -62,7 +62,7 @@ nav.responsive-toolbar{
             
             height:100%;
             width: 250px;
-            left:-240px;
+            left:-250px;
             position: fixed;
             top:60px;
             flex-direction: column;

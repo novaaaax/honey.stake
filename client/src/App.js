@@ -16,11 +16,18 @@ import Contact from "./pages/Contact";
 import SignUp from "./pages/SignUp";
 import Login from "./pages/Login";
 import Logout from "./pages/Logout";
-import logo from './components/logo.svg';
-import homeIcon from "./components/home-outline.svg"
+import cardano from './components/cardano.svg';
+// import homeIcon from "./components/home-outline.svg"
 import Crypto from "./components/cash-outline.svg"
-
-
+import stake from "./components/stakeholder.svg"
+import logo from "./components/logo.svg"
+import team from "./components/team.svg"
+import wallet from "./components/wallet.svg"
+import home from "./components/home.svg"
+import blockchain from "./components/blockchain.svg"
+import contact from "./components/contact.svg"
+import login from "./components/login.svg"
+import logout from "./components/logout.svg"
 
 
 function App() {
@@ -28,32 +35,37 @@ function App() {
     {
       text: "Home",
       path: "/",
-      icon: homeIcon
+      icon: home
     },
     {
       text: "Cryptocurrencies",
       path: "/crypto",
-      icon:  Crypto 
+      icon:  blockchain 
     },
     {
       text: "Cardano",
       path: "/cardano",
-      icon: logo
+      icon: cardano
     },
     {
       text: "Staking Service",
       path: "/staking",
-      icon: "bx-bx-music "
+      icon: stake
+    },
+    {
+      text: "Wallets",
+      path: "/wallets",
+      icon: wallet
     },
     {
       text: "About",
       path: "/about",
-      icon: "wpf-business-contact "
+      icon: team
     },
     {
       text: "Contact",
       path: "/contact ",
-      icon: ""
+      icon: contact
     },
     {
       text: "SignUp",
@@ -63,12 +75,12 @@ function App() {
     {
       text: "Login",
       path: "/login",
-      icon: "mdi-login"
+      icon: login
     },
     {
       text: "Logout",
       path: "/logout",
-      icon: "bx-bx-log-out "
+      icon: logout
     }
 
 

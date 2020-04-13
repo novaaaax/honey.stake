@@ -6,7 +6,7 @@ render() {
     return (
         <>
             <div style={{
-               
+                paddingTop:"15px",
                 backgroundColor: "#007DB3",
                 color: "#black",
                 borderRadius: "25px",
