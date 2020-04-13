@@ -25,13 +25,8 @@ export default class Cryptomarkets extends React.Component{
     }
     render(){
         return(
-<<<<<<< HEAD
-            <div>
-            </div>
-=======
             <div></div>
         // <div>{this.state.cryptoInfo.map(cryptoInfo => <div>{cryptoInfo}</div>)}</div>
->>>>>>> 53f8478526883b0028afb7e2907604ab9ab9654d
         )
     }
 }
