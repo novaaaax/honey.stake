@@ -29,7 +29,7 @@ export default class Cryptomarkets extends React.Component {
                 console.log(err)
             )
 
-    }
+    } 
     render() {
         console.log(this.state.cryptoInfo)
 
