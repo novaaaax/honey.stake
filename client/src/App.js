@@ -103,14 +103,14 @@ function App() {
       
       <Router>
         <Home path="/" />
-        <Cryptocurrencies path="Cryptocurrencies" />
+        <Cryptocurrencies path="crypto" />
         <Cardano path="Cardano" />
         <StakingService path="Staking" />
         <About path="About" />
         <Contact path="Contact" />
-        <Login path="Login" />
+        <Login path="login" />
         <Logout path="Logout" />
-        <SignUp path="SignUp" />
+        <SignUp path="signup" />
 
       </Router>
 
