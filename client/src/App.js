@@ -1,26 +1,130 @@
 import React from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import Home from './components/Home';
-import Learncrypto from './components/Learncrypto';
-import Cryptomarkets from './components/Cryptomarkets';
-import About from './components/About';
-import Signup from './components/Sign-up';
+import { Router } from "@reach/router";
+
+
+// import { BrowserRouter, Route, Switch } from 'react-router-dom';
+// import Cryptomarkets from './components/Cryptomarkets';
+
+
+import ResponsiveNavigation from "./components/ResponsiveNavigation";
+import About from "./pages/About";
+import Home from "./pages/Home";
+import Cardano from "./pages/Cardano";
+import Cryptocurrencies from "./pages/Cryptocurrencies";
+import StakingService from "./pages/StakingService";
+import Contact from "./pages/Contact";
+import SignUp from "./pages/SignUp";
+import Login from "./pages/Login";
+import Logout from "./pages/Logout";
+import cardano from './components/cardano.svg';
+// import homeIcon from "./components/home-outline.svg"
+import Crypto from "./components/cash-outline.svg"
+import stake from "./components/stakeholder.svg"
+import logo from "./components/logo.svg"
+import team from "./components/team.svg"
+import wallet from "./components/wallet.svg"
+import home from "./components/home.svg"
+import blockchain from "./components/blockchain.svg"
+import contact from "./components/contact.svg"
+import login from "./components/login.svg"
+import logout from "./components/logout.svg"
 
 
 function App() {
+  const navLinks = [
+    {
+      text: "Home",
+      path: "/",
+      icon: home
+    },
+    {
+      text: "Cryptocurrencies",
+      path: "/crypto",
+      icon:  blockchain 
+    },
+    {
+      text: "Cardano",
+      path: "/cardano",
+      icon: cardano
+    },
+    {
+      text: "Staking Service",
+      path: "/staking",
+      icon: stake
+    },
+    {
+      text: "Wallets",
+      path: "/wallets",
+      icon: wallet
+    },
+    {
+      text: "About",
+      path: "/about",
+      icon: team
+    },
+    {
+      text: "Contact",
+      path: "/contact ",
+      icon: contact
+    },
+    {
+      text: "SignUp",
+      path: "/signup ",
+      icon: ""
+    },
+    {
+      text: "Login",
+      path: "/login",
+      icon: login
+    },
+    {
+      text: "Logout",
+      path: "/logout",
+      icon: logout
+    }
+
+
+  ]
+
+
   return (
-    <BrowserRouter>
-    <Navbar></Navbar>
-    <Switch>
-      <Route path="/" component={Home} exact></Route>
-      <Route path="/learncrypto" component={Learncrypto}></Route>
-      <Route path="/markets" component={Cryptomarkets}></Route>
-      <Route path="/about" component={About}></Route>
-      <Route path="/signup" component={Signup}></Route>
-    </Switch>
-    </BrowserRouter>
+
+
+    <div className="App">
+      <ResponsiveNavigation
+        navLinks= { navLinks }
+        logo= { logo }
+        background="#fff"
+        hoverBackground="#ddd"
+        linkColor="#777"
+        
+      />
+    
+      
+      <Router>
+        <Home path="/" />
+        <Cryptocurrencies path="Cryptocurrencies" />
+        <Cardano path="Cardano" />
+        <StakingService path="Staking" />
+        <About path="About" />
+        <Contact path="Contact" />
+        <Login path="Login" />
+        <Logout path="Logout" />
+        <SignUp path="SignUp" />
+
+      </Router>
+
+    </div>
+
+
+
   );
+
+
+
+
 }
+
+
 
 export default App;

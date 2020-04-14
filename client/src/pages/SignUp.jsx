@@ -1,8 +1,8 @@
-import React from 'react';
-import axios from 'axios';
+import React, { Component } from "react"
+import axios from "axios"
 
 
-export default class Signup extends React.Component {
+class SignUp extends Component {
     constructor(props) {
         super(props);
 
@@ -31,7 +31,7 @@ export default class Signup extends React.Component {
             password: this.state.password
         }).then(response => {
             console.log(response)
-            if(response.data){
+            if (response.data) {
                 console.log('signup success')
                 this.setState({
                     redirectTo: "/login"
@@ -65,3 +65,4 @@ export default class Signup extends React.Component {
         );
     }
 }
+    export default SignUp
