@@ -6,8 +6,8 @@ render() {
     return (
         <>
             <div style={{
-                paddingTop:"15px",
-                backgroundColor: "#007DB3",
+                paddingTop:"120px",
+                backgroundColor: rgb"162,233,236",
                 color: "#black",
                 borderRadius: "25px",
                 textAlign: "center"
