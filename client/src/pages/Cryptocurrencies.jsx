@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import axios from "axios";
 import dotenv from "dotenv";
-import "../components/style.css"
+import "../components/Style.css"
 
 
 dotenv.config();

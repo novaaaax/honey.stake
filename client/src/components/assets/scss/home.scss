@@ -1,26 +1,39 @@
-
+#master{
+    background-color: #07454715 ;
 #welcome{
-    padding-top:120px ; 
-    background-color: #5fdadf;
-    color: rgb(53, 52, 52);
-    
+    padding-top:110px ; 
+    // background-color: #5fdadf;
+    // color: rgb(53, 52, 52);
+    background-image: image(solve8);
     width: 100%;
-    padding-bottom: 20px;
+    padding-bottom: 95px;
+    text-align: center;
    
-    
+  
   h1{
-     text-align: left;
+    color: rgb(52, 53, 53);
+     text-align: center;
  }
  h3{
      text-align: center;
+     color: rgb(25, 31, 31);
  }
  
  }
+ #solve8{
+    width: 100%;
+    padding-top: 0;
+ margin-top: -270px;
+  
 
+
+}
  
 
 
 #centralize{
+    // background-color: rgba(132, 186, 202, 0.103);
+    
     h3{
 
     }
@@ -34,6 +47,7 @@
         float:left;
         width: 100%;
         padding-right:5px;
+        margin-top: 66px;
         
 
     }
@@ -51,24 +65,47 @@
 
     img{
         width: 40%;
-        height: 90%;
-       margin-top:130px;
+        // height: 90%;
+       margin-top:-18px;
        padding-left: 20px;
+       
+        height: 340px;
+ 
     }
 
   
 
 }
-
-#decent{
-    // width: 40%;
-    height: 90%;
-   margin-top:-20px;
-   padding-left: 20px;
+#vs{
+    
+    margin-top: -96px;
+    padding-top: 0;
+    align-items: center;
+    // margin-right: 20px;
 }
 
+.column2{
+    float:left;
+    width: 100%;
+    padding-right:5px;
+    
+}
+#decent{
+    
+    // width: 40%;
+    height: 90%;
+   margin-top:-13px;
+   padding-left: 20px;
+   background-color: rgba(132, 186, 202, 0.103);
+   img{
+    width: 45%;
+    height: 90%;
+   margin-top:-10px;
+   padding-right: 15px;
+}
+}
 
-
+}
 
 @media screen and (max-width: 759px) {
   #welcome{
@@ -85,6 +122,20 @@
     }
   }
   }  
+
+  #decent{
+    // width: 40%;
+    height: 90%;
+   margin-top:-133px;
+   padding-left: 20px;
+
+   img{
+    width: 45%;
+    height: 90%;
+   margin-top:-10px;
+   padding-left: 10px;
+}
+}
 
 
 
