@@ -1,6 +1,6 @@
 import React from 'react';
 import { Router } from "@reach/router";
-
+import "./components/assets/scss/home.scss";
 
 // import { BrowserRouter, Route, Switch } from 'react-router-dom';
 // import Cryptomarkets from './components/Cryptomarkets';
@@ -18,7 +18,7 @@ import Login from "./pages/Login";
 import Logout from "./pages/Logout";
 import cardano from './components/cardano.svg';
 // import homeIcon from "./components/home-outline.svg"
-import Crypto from "./components/cash-outline.svg"
+// import Crypto from "./components/cash-outline.svg"
 import stake from "./components/stakeholder.svg"
 import logo from "./components/logo.svg"
 import team from "./components/team.svg"
@@ -28,6 +28,7 @@ import blockchain from "./components/blockchain.svg"
 import contact from "./components/contact.svg"
 import login from "./components/login.svg"
 import logout from "./components/logout.svg"
+import signup from "./components/sign-up.svg"
 
 
 function App() {
@@ -70,7 +71,7 @@ function App() {
     {
       text: "SignUp",
       path: "/signup ",
-      icon: ""
+      icon: signup
     },
     {
       text: "Login",
@@ -85,7 +86,7 @@ function App() {
 
 
   ]
-
+  // function toggle()
 
   return (
 
@@ -99,10 +100,13 @@ function App() {
         linkColor="#777"
         
       />
+
     
-      
+      {/* <div className="mob"> */}
+
       <Router>
         <Home path="/" />
+<<<<<<< HEAD
         <Cryptocurrencies path="crypto" />
         <Cardano path="cardano" />
         <StakingService path="staking" />
@@ -111,9 +115,20 @@ function App() {
         <Login path="login" />
         <Logout path="logout" />
         <SignUp path="signUp" />
+=======
+        info
+        <Cryptocurrencies path="/crypto" />
+        <Cardano path="/cardano" />
+        <StakingService path="/staking" />
+        <About path="/about" />
+        <Contact path="/contact" />
+        <Login path="/login" />
+        <Logout path="/logout" />
+        <SignUp path="/signup" />
+>>>>>>> 27c0394af004bc95ae01f03e9ef79b19176bd651
 
       </Router>
-
+      {/* </div> */}
     </div>
 
 
