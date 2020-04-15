@@ -15,8 +15,16 @@ if (process.env.NODE_ENV === "production") {
 // Add routes, both API and view
 // app.use(routes);
 
-// Connect to the Mongo DB
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/reactreadinglist");
+// Connect to the Mongo DBmongodb
+mongoose.connect(
+  // "mongodb+srv://trionb:trionb@cluster0-nc8il.mongodb.net/test?retryWrites=true&w=majority" ||
+  "mongodb://localhost/honeystake", {
+  useNewUrlParser: true,
+  useCreateIndex: true,
+  useUnifiedTopology: true
+})
+.then(() => console.log('MongoDB Connected'))
+.catch(err => console.log(err))
 
 // Start the API server
 app.listen(PORT, function() {
