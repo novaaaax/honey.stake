@@ -4,71 +4,127 @@ import React, { Component } from "react"
 // import centralized from "../components/assets/img/centralized.png"
 import cent from "../components/assets/img/cent.png"
 import decent from "../components/assets/img/decent.png"
-
-
+// import vs from "../components/assets/img/vs.png"
+import solve8 from "../components/assets/img/solve8.jpeg"
+// import solve7 from "../components/assets/img/solve7.jpeg"
+import bitcoin1 from "../components/assets/img/bitcoin1.jpeg"
 class Home extends Component {
     render() {
         return (
-            <>
-                <div style={{
+            <div id="master">
 
-                    // paddingTop:"120px",
+
+                <div style={{
+                    backgroundImage: "url(" + solve8 + ")",
+                    backgroundPosition: "center",
+                    backgroundSize: "cover"
+                    // backgroundImage: solve8
+                    // paddingTop: "120px",
                     // backgroundColor: "#74e2ff",
                     // color: "#black",
                     // borderRadius: "25px",
                     // textAlign: "center"
 
                 }} id="welcome" className="hero column col-11 col-xs-12 container">
-                    <h1>Welcome to Solve, </h1>
-                    <h3>we are committed to take you on the Journey of decentralization and Solve it together.</h3>
+                    {/* <p> <img id="solve8" src={solve8} alt="solve"></p> */}
+                    <h1>Welcome to Solve,</h1>
+                    <h3> we recognize that we must plant trees for the next generation and therefore, we are committed to take you on the Journey of awareness about cryptocurrencies and of decentralization.</h3>
+                    {/* </img> */}
+                    {/* <h1> </h1>
+                    <h3></h3> */}
+
+
 
                 </div>
 
                 <div id="centralize" className="hero column col-11 col-xs-12 container">
-                    <div class="row">
-                        <div class="column1">
+                    <div className="row">
+                        <div className="column1">
                             <div >
                                 <img src={cent} align="right"></img>
                             </div>
                             <h5>First lets take a look at what centralized systems look like vs. decentralized systems</h5>
-                            <br />
-                            <h6>In our example, you can see that a centralized system is a kind of system that requires you give your power, data or money to either a big corporation, a bank or the government for convenience.</h6>
-                            <h6> These centralized systems are for profit businesses and they know they are convenient and very easy to use.</h6>
-                            <h6>For example, although most Americans are banked, there are 1.7 Billion adults un-banked in the World because some of them are to poor or live in poor countries and a bank doesn't take them serious, because the bank can't make money off of them.</h6>
-                            <h6> If you are banked you know that the bank will hold your money, but they will lend that money (credit) to another person or other banks for a high interest, this bank then makes 80% an gives you 20% in interest for holding Your Money in the (System) bank .</h6>
-                            <h6>Another example are the big corporations like BookFace, Amazonian or tubYou.</h6>
-                            <h6>These centralized businesses are making their profit with your help, your attention, your information, your data. We know as a fact that some of them sell your data to countries like China or Russia or to advertising Companies,
-                         none of them will send you a check at the end of the month for your participation, instead they will bombard you with advertising and they will track your location.</h6>
-                            <h6>These centralized platforms can be good for building a small business, but if you say anything against the government or your message contains information that their algorithms don't like, you will be demonetized or banned.
-                         We all might have heard stories about banned videos on tubeYou or that BookFace deleted someones account. Don't worry it wasn't you...yet</h6>
-                            <h6>These Centralized systems are in some instances violating our fundamental human rights and because they became big and powerful systems it can turn to tyranny very quick and very fast...when it's your turn to speak up and you cant, what will you do without a platform to give you a voice in this digital age?</h6>
-                            <h6>This brings us back to the Governments.
-                            As of today, there are 50 dictatorships in the world
-                            (19 in Sub-Saharan Africa, 12 in the Middle East and North Africa, 8 in Asia-Pacific, 7 in Eurasia, 3 in Americas and 1 in Europe).
-                              We define a dictator as the ruler of a land rated “Not Free” by the Freedom House in their annual survey of freedom.</h6>
-                            <h6>In this Digital age it can be very easy for a Government to become a Dictatorship and way to hard to get out of one.</h6>
-                            <h6> Take China for example, second economy in the World. They have internet but they can spread any information without the government not knowing.
-                            China is so advanced in their digitalization that 90% of their transactions are digital but instead of using cryptocurrencies, the government is forcing it's people to pay with a digital yan so the transaction can be traced.
-                             How long will it take fot your favorite government to have total control over your finance, your information and your freedom </h6>
+                            <ul>
+                                <li>A centralized system is a kind of system that requires you give your power, data or money to either a big corporation, a bank or, a government for convenience.</li>
+                                <li>Banks are a centralized - FOR profit business & systems that is are accessible to all! Especially the lower class and those in poorer countries!</li>
+                                <li>Centralized systems confine you to their strict rules and regulations </li>
+                                <li>In Centralized systems you don't have control over your data </li>
+                                <li>You can lose your freedom of speech on a centralized platform and even be banned</li>
+                                <li>A very good example of the ramifications of a fully centralized system is China. A country that is using its digital power to control and suppress the people, where basic rights are being taken away, censorship is taking over and a social score is being implemented. </li>
+                                   {/* <li></li> */} 
+                            </ul>
+
                         </div>
 
                     </div>
                 </div>
-                <div id="centralize" className="hero column col-11 col-xs-12 container">
-                    <div class="row">
+                {/* <div id="vs" className="hero column col-4 col-xs-12 container">
+                    <div className="row">
+
+
+                        <div id="cvsd">
+                            <img src={vs}></img>
+                        </div>
+
+                    </div>
+
+                </div> */}
+                <div id="decentralize" className="hero column col-11 col-xs-12 container">
+                    <div className="row">
+                        <div className="column2">
+                            <div id="decent">
+                                <img src={decent} align="left"></img>
+                            </div>
+
+
+                            <h5> Now lets take a look at what  decentralized systems look like</h5>
+                            <ul>
+                                <li>Decentralized system is a kind of system that has no central authority making decisions in the name of all participants. </li>
+                                <li>Each participant, also known as ‘peer,’ makes their own autonomous decisions pursuing their own self-interest that may collide with the goals of other peers.</li>
+                                <li>In decentralized systems the participants directly interact with each other, share information, or, offer services to others.</li>
+                                <li>In an open, decentralized system, there are no limits or regulations for new users to access it because of country or their social and economic status.</li>
+                                <li>Any new participant can enter or leave the system at will.</li>
+                                <li>No one can be banned and each individual can vote by being part of the system and by owning a pice of the system</li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div style={{
+                    // backgroundImage: "url(" + bitcoin1 + ")",
+                    // backgroundPosition: "center",
+                    // backgroundSize: "cover"
+                    // backgroundImage: solve8
+                    // paddingTop: "120px",
+                    // backgroundColor: "#74e2ff",
+                    // color: "#black",
+                    // borderRadius: "25px",
+                    // textAlign: "center"
+
+                }}id="decentralize" className="hero column col-11 col-xs-12 container">
+                    <div className="row">
 
                         <div id="decent">
-                            <img src={decent} align="right"></img>
+                            <img src={bitcoin1} align="left"></img>
                         </div>
-                        <h1>Have you ever ask yourself what ar</h1>
-                        <h2>A decentralized system is a kind of system that requires the users to make their own, individual, decisions.
-                        In such systems, there is no designated central authority making decisions in the name of all participants.
-                        Instead, each participant, also known as ‘peer,’ makes their own autonomous decisions pursuing their own self-interest that may collide with the goals of other peers.
-                        The participants directly interact with each other, share information, or, offer services to others.
-                        In an open, decentralized system, there are no limits or regulations for new users to access it.
-                        Likewise, any new participant can enter or leave the system at will.</h2>
+                        
+                        <h6>After the 2008 financial crash and bailout of the "to-big to fail" corporations and banks, </h6>
+                        <h4>a new system of technology emerged!</h4>
+                        <ul>
+                            <li>This system is like the internet where people can build on top ot it</li>
+                            <li>It is fully transparent </li>
+                            <li>censorship resistent</li>
+                            <li>Not only can you own a pice of the system but you can transfer it</li>
+                            <li>It is borderless </li>
+                            <li>This system is deflationary</li>
+                            <li>It is used as a store of value because of its set supply</li>
+                            <li>Bitcoin is the first generation of cryptocurrencies aka. digital gold</li>
+                        </ul>
+                        <h3>We sincerely believe that one of the projects that operate in a fully decentralized way is Cardano.</h3>
 
-                        <h3>We sincerely believe that one of the projects that offer the potential to operationalize the proven concept of decentralization is Cardano.</h3>
 
                     </div>
 
@@ -171,7 +227,7 @@ class Home extends Component {
                 </div>
 
 
-            </>
+            </div>
         );
     }
 

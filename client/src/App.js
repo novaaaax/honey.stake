@@ -12,7 +12,7 @@ import Home from "./pages/Home";
 import Cardano from "./pages/Cardano";
 import Cryptocurrencies from "./pages/Cryptocurrencies";
 import StakingService from "./pages/StakingService";
-import Contact from "./pages/Contact";
+// import Contact from "./pages/Contact";
 import SignUp from "./pages/SignUp";
 import Login from "./pages/Login";
 import Logout from "./pages/Logout";
@@ -63,11 +63,11 @@ function App() {
       path: "/about",
       icon: team
     },
-    {
-      text: "Contact",
-      path: "/contact ",
-      icon: contact
-    },
+    // {
+    //   text: "Contact",
+    //   path: "/contact ",
+    //   icon: contact
+    // },
     {
       text: "SignUp",
       path: "/signup ",
@@ -106,11 +106,15 @@ function App() {
 
       <Router>
         <Home path="/" />
+<<<<<<< HEAD
+        
+=======
+>>>>>>> f24826b9795f9eae1c5a07c431fcf09173595e83
         <Cryptocurrencies path="/crypto" />
         <Cardano path="/cardano" />
         <StakingService path="/staking" />
         <About path="/about" />
-        <Contact path="/contact" />
+        {/* <Contact path="/contact" /> */}
         <Login path="/login" />
         <Logout path="/logout" />
         <SignUp path="/signup" />
