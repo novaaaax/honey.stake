@@ -106,7 +106,10 @@ function App() {
 
       <Router>
         <Home path="/" />
+<<<<<<< HEAD
         
+=======
+>>>>>>> f24826b9795f9eae1c5a07c431fcf09173595e83
         <Cryptocurrencies path="/crypto" />
         <Cardano path="/cardano" />
         <StakingService path="/staking" />
