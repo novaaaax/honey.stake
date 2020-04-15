@@ -160,5 +160,3 @@ class Cryptocurrencies extends Component {
 
 export default Cryptocurrencies
 
-
-// Videos
