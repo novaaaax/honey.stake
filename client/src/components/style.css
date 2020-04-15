@@ -1,11 +1,9 @@
 .card {
-    
     border-color: black;
 }
 .table td, .table th {
     border-bottom: .05rem solid #dadee4;
     padding: .6rem .4rem;
-   
 }
 .table th {
     border-bottom-width: .1rem;
