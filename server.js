@@ -91,14 +91,6 @@ app.post("/api/login", async (req, res) => {
   }
 })
 
-app.get("/api/login", async (req, res) => {
-  const errors = {}
-  const {password, email} = req.param.id
-  console.log(email)
-  const user = await db.User('first_name').find()
- .then((userData) => res.send(userData))
-})
-
 app.post('/api/logout', async (req, res) => {
   // Log user out of the application
   try {
