@@ -90,7 +90,6 @@ app.post("/api/login", async (req, res) => {
     console.log(err)
   }
 })
-
 // Start the API server
 app.listen(PORT, function() {
   console.log(`🌎  ==> API Server now listening on PORT ${PORT}!`);

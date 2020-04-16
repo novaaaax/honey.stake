@@ -9,10 +9,7 @@ class SignUp extends Component {
         this.state = {
             email: "",
             password: "",
-            formErrors: {email: '', password: ''},
-            emailValid: false,
-            passwordValid: false,
-            formValid: false
+            errors: {}
              
         }
         this.handleSubmit = this.handleSubmit.bind(this)
@@ -36,7 +33,7 @@ class SignUp extends Component {
             console.log(response)
             if (response.data) {
                 console.log('login success')
-                // window.location.replace("http://localhost:3000/crypto")
+                // window.location.replace("http://localhost:3000/profile")
             } else {
                 console.log('sign in error')
                 return;

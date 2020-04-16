@@ -15,7 +15,7 @@ import StakingService from "./pages/StakingService";
 import Contact from "./pages/Contact";
 import SignUp from "./pages/SignUp";
 import Login from "./pages/Login";
-import Logout from "./pages/Logout";
+// import Logout from "./pages/Logout";
 import cardano from './components/cardano.svg';
 // import homeIcon from "./components/home-outline.svg"
 // import Crypto from "./components/cash-outline.svg"
@@ -112,7 +112,7 @@ function App() {
         <About path="/about" />
         <Contact path="/contact" />
         <Login path="/login" />
-        <Logout path="/logout" />
+        {/* <Logout path="/logout" /> */}
         <SignUp path="/signup" />
 
       </Router>
