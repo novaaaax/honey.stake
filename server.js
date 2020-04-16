@@ -68,7 +68,7 @@ app.post("/api/login", async (req, res) => {
     const user = await db.User.findOne({email})
     if(!user) {
       errors.email = 'User not found'
-      return res.status(404).json(errors)
+      return res.status(404).json({userNotFound: "Not Found"})
     }
     const isMatch = await bcrypt.compare(password, user.password)
     if(isMatch){
@@ -89,6 +89,18 @@ app.post("/api/login", async (req, res) => {
   } catch(err) {
     console.log(err)
   }
+})
+
+app.get("/api/login", async (req, res) => {
+  const errors = {}
+  const {password, email} = req.param.id
+  console.log(email)
+  const user = await db.User('first_name').find()
+ .then((userData) => res.json(userData))
+})
+
+app.get("/api/logout", async (req, res) => {
+  
 })
 
 // Start the API server

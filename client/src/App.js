@@ -1,7 +1,7 @@
 import React from 'react';
 import { Router } from "@reach/router";
 
-
+import "./components/assets/scss/profile.scss"
 // import { BrowserRouter, Route, Switch } from 'react-router-dom';
 // import Cryptomarkets from './components/Cryptomarkets';
 
@@ -28,6 +28,7 @@ import blockchain from "./components/blockchain.svg"
 import contact from "./components/contact.svg"
 import login from "./components/login.svg"
 import logout from "./components/logout.svg"
+import Profile from "./pages/Profile"
 
 
 function App() {
@@ -81,6 +82,11 @@ function App() {
       text: "Logout",
       path: "/logout",
       icon: logout
+    },
+    {
+      text: "Profile",
+      path: "/profile",
+      icon: ""
     }
 
 
@@ -108,6 +114,7 @@ function App() {
         <StakingService path="Staking" />
         <About path="About" />
         <Contact path="Contact" />
+        <Profile path="profile" />
         <Login path="login" />
         <Logout path="Logout" />
         <SignUp path="signup" />
