@@ -40,7 +40,7 @@ function ResponsiveNavigation({ navLinks, background, hoverBackground, linkColor
             >
               {link.text}
               {/* <i class={link.icon} /> */}
-             <img src= {link.icon}></img>
+             <img src= {link.icon} alt="icon"></img>
             </Link>
 
           </li>
