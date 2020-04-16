@@ -1,5 +1,7 @@
 import React from 'react';
 import { Router } from "@reach/router";
+
+import "./components/assets/scss/profile.scss"
 import "./components/assets/scss/home.scss";
 
 // import { BrowserRouter, Route, Switch } from 'react-router-dom';
