@@ -4,7 +4,7 @@ import "./components/assets/scss/home.scss";
 
 // import { BrowserRouter, Route, Switch } from 'react-router-dom';
 // import Cryptomarkets from './components/Cryptomarkets';
-
+import "./components/assets/scss/cardano.scss";
 
 import ResponsiveNavigation from "./components/ResponsiveNavigation";
 import About from "./pages/About";

@@ -41,12 +41,12 @@ class Home extends Component {
                     <div className="row">
                         <div className="column1">
                             <div >
-                                <img src={cent} align="right"></img>
+                                <img src={cent} align="center"></img>
                             </div>
                             <h5>First lets take a look at what centralized systems look like vs. decentralized systems</h5>
                             <ul>
                                 <li>A centralized system is a kind of system that requires you give your power, data or money to either a big corporation, a bank or, a government for convenience.</li>
-                                <li>Banks are a centralized - FOR profit business & systems that is are accessible to all! Especially the lower class and those in poorer countries!</li>
+                                <li>Banks are a centralized - FOR profit business & systems that is not accessible to all! Especially the lower class and those in poorer countries!</li>
                                 <li>Centralized systems confine you to their strict rules and regulations </li>
                                 <li>In Centralized systems you don't have control over your data </li>
                                 <li>You can lose your freedom of speech on a centralized platform and even be banned</li>
