@@ -5,17 +5,21 @@ import "../components/style.css"
 import coindesk from "./coindesk.png"
 import cointelegraph from "./cointelegraph.png"
 import blockchain from "./blockchain.png"
-
+import moment from "moment"
+import ReactMomentCountDown from 'react-moment-countdown'
+import { set } from "mongoose";
 
 dotenv.config();
 
 class Cryptocurrencies extends Component {
     state = {
         cryptoInfo: {},
+        dateInFuture: undefined
         // BTC: []
     }
     componentDidMount() {
         console.log("component mounted");
+        const dateInFuture = moment('05-12-2020', 'MM-DD-YYYY')
         var key = process.env.APIKey
         // eslint-disable-next-line no-useless-concat
         var URL = 'https://min-api.cryptocompare.com/data/pricemulti?fsyms=BTC,ETH,ADA&tsyms=USD,EUR' + `&api+key=${key}`;
@@ -24,7 +28,8 @@ class Cryptocurrencies extends Component {
         axios.get(URL)
             .then(res => {
                 this.setState({
-                    cryptoInfo: res.data
+                    cryptoInfo: res.data,
+                    dateInFuture: moment('05-12-2020', 'MM-DD-YYYY')
                 })
                 console.log(res.data)
             })
@@ -33,15 +38,15 @@ class Cryptocurrencies extends Component {
             )
 
     }
-    render() {
-        console.log(this.state.cryptoInfo)
 
+    render() {
+        const dateInFuture = moment('2020-05-12')
         return (
 
             <>
                 <table className="table table-striped table-hover" style={{
-                    marginTop:"50px",
-                    backgroundColor:"lightgray"
+                    marginTop: "50px",
+                    backgroundColor: "lightgray"
                 }}>
                     <thead>
                         <tr>
@@ -86,67 +91,70 @@ class Cryptocurrencies extends Component {
                         </tr>
                     </tbody>
                 </table>
-
-                <div className="card" style={{
-                    textAlign: "center",
-                    padding: "20px",
-                    backgroundColor: "#5FDADF"
-                }}>
-                    <div className="card-image">
-                        <img src={coindesk} class="center"></img>
-                    </div>
-                    <div className="card-header">
-                        <div className="card-title h5">CoinDesk</div>
-                        <div className="card-subtitle text-black">Leader in blockchain news</div>
-                    </div>
-                    <div className="card-body">
-                        Click here to access one of the best cryptocurrency news sites for your educational needs and all updates!
-                    </div>
-                    <div class="card-footer">
-                        <button onClick="window.location.href = 'https://www.coindesk.com/';">Click Here</button>
-                    </div>
+                <h2>Time Until Bitcoin Halfening:</h2>
+                <ReactMomentCountDown style={{
+                    marginLeft: "20px"
+                }} toDate={dateInFuture} targetFormatMask='DD:HH:mm:ss'></ReactMomentCountDown>
+            <div className="card" style={{
+                textAlign: "center",
+                padding: "20px",
+                backgroundColor: "#5FDADF"
+            }}>
+                <div className="card-image">
+                    <img src={coindesk} class="center"></img>
                 </div>
-
-                <div className="card" style={{
-                    textAlign: "center",
-                    padding: "20px",
-                    backgroundColor: "#5FDADF"
-                }}>
-                    <div className="card-image">
-                        <img src={cointelegraph} class="center"></img>
-                    </div>
-                    <div className="card-header">
-                        <div className="card-title h5">COINTELEGRAPH</div>
-                        <div className="card-subtitle text-black">The most recent news about crypto industry</div>
-                    </div>
-                    <div className="card-body">
-                        Click here to access one of the best cryptocurrency news sites for your educational needs and all updates!
-                    </div>
-                    <div class="card-footer">
-                        <button onClick="window.location.href = 'https://cointelegraph.com/';">Click Here</button>
-                    </div>
+                <div className="card-header">
+                    <div className="card-title h5">CoinDesk</div>
+                    <div className="card-subtitle text-black">Leader in blockchain news</div>
                 </div>
-
-
-                <div className="card" style={{
-                    textAlign: "center",
-                    padding: "20px",
-                    backgroundColor: "#5FDADF"
-                }}>
-                    <div className="card-image">
-                        <img src={blockchain} class="center"></img>
+                <div className="card-body">
+                    Click here to access one of the best cryptocurrency news sites for your educational needs and all updates!
                     </div>
-                    <div className="card-header">
-                        <div className="card-title h5">Blockchain and Cryptocurrency</div>
-                        <div className="card-subtitle text-black">What is blockchain technology? What is cryptocurrency?</div>
-                    </div>
-                    <div className="card-body">Learn about both blockchain and crypto and how they work together!</div>
-                    <div className="card-footer">
-                        <button onClick="window.location.href = 'https://builtin.com/blockchain';">Blockchain 101</button>
-                        <button onClick="window.location.href = 'https://www.nerdwallet.com/blog/investing/cryptocurrency-7-things-to-know/';">Cryptocurrency</button>
-                        <button onClick="window.location.href = 'https://www.pwc.com/us/en/industries/financial-services/fintech/bitcoin-blockchain-cryptocurrency.html';">Crypto and Blockchain</button>
-                    </div>
+                <div class="card-footer">
+                    <button onClick="window.location.href = 'https://www.coindesk.com/';">Click Here</button>
                 </div>
+            </div>
+
+            <div className="card" style={{
+                textAlign: "center",
+                padding: "20px",
+                backgroundColor: "#5FDADF"
+            }}>
+                <div className="card-image">
+                    <img src={cointelegraph} class="center"></img>
+                </div>
+                <div className="card-header">
+                    <div className="card-title h5">COINTELEGRAPH</div>
+                    <div className="card-subtitle text-black">The most recent news about crypto industry</div>
+                </div>
+                <div className="card-body">
+                    Click here to access one of the best cryptocurrency news sites for your educational needs and all updates!
+                    </div>
+                <div class="card-footer">
+                    <button onClick="window.location.href = 'https://cointelegraph.com/';">Click Here</button>
+                </div>
+            </div>
+
+
+            <div className="card" style={{
+                textAlign: "center",
+                padding: "20px",
+                backgroundColor: "#5FDADF"
+            }}>
+                <div className="card-image">
+                    <img src={blockchain} class="center"></img>
+                </div>
+                <div className="card-header">
+                    <div className="card-title h5">Blockchain and Cryptocurrency</div>
+                    <div className="card-subtitle text-black">What is blockchain technology? What is cryptocurrency?</div>
+                </div>
+                <div className="card-body">Learn about both blockchain and crypto and how they work together!</div>
+                <div className="card-footer">
+                    <button onClick="window.location.href = 'https://builtin.com/blockchain';">Blockchain 101</button>
+                    <button onClick="window.location.href = 'https://www.nerdwallet.com/blog/investing/cryptocurrency-7-things-to-know/';">Cryptocurrency</button>
+                    <button onClick="window.location.href = 'https://www.pwc.com/us/en/industries/financial-services/fintech/bitcoin-blockchain-cryptocurrency.html';">Crypto and Blockchain</button>
+                </div>
+            </div>
             </>
         )
     }
