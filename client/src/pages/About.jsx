@@ -6,7 +6,7 @@ class About extends Component {
         return (
             <>   
                 (" ")
-                <div className="card" style={{
+                <div className="card col-xs-12" style={{
                         position: "absolute",
                         top: "70px",
                         borderRadius:"12px",
