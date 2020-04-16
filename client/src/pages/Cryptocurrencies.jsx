@@ -2,12 +2,9 @@ import React, { Component } from "react"
 import axios from "axios";
 import dotenv from "dotenv";
 import "../components/Style.css"
-<<<<<<< HEAD
 import coindesk from "./coindesk.png"
 import cointelegraph from "./cointelegraph.png"
 import blockchain from "./blockchain.png"
-=======
->>>>>>> 8ce97dc71b43ed202b69e92c08f0248387b14d65
 
 
 dotenv.config();
