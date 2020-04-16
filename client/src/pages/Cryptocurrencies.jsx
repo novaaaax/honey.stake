@@ -39,15 +39,15 @@ class Cryptocurrencies extends Component {
         return (
 
             <>
-                <table className="table table-striped table-hover">
+                <table className="table table-striped table-hover" style={{
+                    marginTop:"50px",
+                    backgroundColor:"lightgray"
+                }}>
                     <thead>
                         <tr>
                             <th>Name</th>
                             <th>USD</th>
                             <th>EUR</th>
-                            <th>Change</th>
-                            <th>Chart</th>
-
                         </tr>
                     </thead>
                     <tbody>
@@ -61,8 +61,6 @@ class Cryptocurrencies extends Component {
                             <td>
                                 {this.state.cryptoInfo && this.state.cryptoInfo.BTC && this.state.cryptoInfo.BTC.USD && this.state.cryptoInfo.BTC.EUR}
                             </td>
-                            <td>Change{}</td>
-                            <td>Chart</td>
                         </tr>
                         <tr className="active">
                             <td>
@@ -74,8 +72,6 @@ class Cryptocurrencies extends Component {
                             <td>
                                 {this.state.cryptoInfo && this.state.cryptoInfo.ETH && this.state.cryptoInfo.ETH.USD && this.state.cryptoInfo.ETH.EUR}
                             </td>
-                            <td>Change{}</td>
-                            <td>Chart</td>
                         </tr>
                         <tr className="active">
                             <td>
@@ -87,8 +83,6 @@ class Cryptocurrencies extends Component {
                             <td>
                                 {this.state.cryptoInfo && this.state.cryptoInfo.ADA && this.state.cryptoInfo.ADA.USD && this.state.cryptoInfo.ADA.EUR}
                             </td>
-                            <td>Change{}</td>
-                            <td>Chart</td>
                         </tr>
                     </tbody>
                 </table>

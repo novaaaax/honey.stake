@@ -10,6 +10,7 @@ class Profile extends Component {
             errors: {}
         }
     }
+    //setting name tp profile page
     componentWillMount() {
         this.setState({
             first_name: localStorage.getItem("firstName")
