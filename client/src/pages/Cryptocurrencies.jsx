@@ -109,7 +109,7 @@ class Cryptocurrencies extends Component {
                         Click here to access one of the best cryptocurrency news sites for your educational needs and all updates!
                     </div>
                     <div class="card-footer">
-                        <button onClick="window.location.href = 'https://www.coindesk.com/';">Click Here</button>
+                        <a href="https://www.coindesk.com/" target="_blank" rel="noopener noreferrer"><button>Click Here</button></a> 
                     </div>
                 </div>
 
@@ -129,7 +129,7 @@ class Cryptocurrencies extends Component {
                         Click here to access one of the best cryptocurrency news sites for your educational needs and all updates!
                     </div>
                     <div class="card-footer">
-                        <button onClick="window.location.href = 'https://cointelegraph.com/';">Click Here</button>
+                    <a href="https://www.cointelegraph.com/" target="_blank" rel="noopener noreferrer"><button>Click Here</button></a>
                     </div>
                 </div>
 
@@ -148,9 +148,9 @@ class Cryptocurrencies extends Component {
                     </div>
                     <div className="card-body">Learn about both blockchain and crypto and how they work together!</div>
                     <div className="card-footer">
-                        <button onClick="window.location.href = 'https://builtin.com/blockchain';">Blockchain 101</button>
-                        <button onClick="window.location.href = 'https://www.nerdwallet.com/blog/investing/cryptocurrency-7-things-to-know/';">Cryptocurrency</button>
-                        <button onClick="window.location.href = 'https://www.pwc.com/us/en/industries/financial-services/fintech/bitcoin-blockchain-cryptocurrency.html';">Crypto and Blockchain</button>
+                    <a href="https://builtin.com/blockchain" target="_blank" rel="noopener noreferrer"><button>Blockchain 101</button></a>
+                    <a href="https://www.nerdwallet.com/blog/investing/cryptocurrency-7-things-to-know/" target="_blank" rel="noopener noreferrer"><button>Crypto 101</button></a>
+                    <a href="https://www.pwc.com/us/en/industries/financial-services/fintech/bitcoin-blockchain-cryptocurrency.html" target="_blank" rel="noopener noreferrer"><button>Blockchain + Crypto</button></a>
                     </div>
                 </div>
             </>

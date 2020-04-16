@@ -32,6 +32,7 @@ import login from "./components/login.svg"
 import logout from "./components/logout.svg"
 import Profile from "./pages/Profile"
 import signup from "./components/sign-up.svg"
+import profile from "./components/avatar.svg"
 
 
 function App() {
@@ -89,7 +90,7 @@ function App() {
     {
       text: "Profile",
       path: "/profile",
-      icon: ""
+      icon: profile
     }
 
 
