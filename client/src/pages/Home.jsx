@@ -41,7 +41,7 @@ class Home extends Component {
                     <div className="row">
                         <div className="column1">
                             <div >
-                                <img src={cent} align="right"></img>
+                                <img src={cent} align="right" alt="cent"></img>
                             </div>
                             <h5>First lets take a look at what centralized systems look like vs. decentralized systems</h5>
                             <ul>
@@ -73,7 +73,7 @@ class Home extends Component {
                     <div className="row">
                         <div className="column2">
                             <div id="decent">
-                                <img src={decent} align="left"></img>
+                                <img src={decent} align="left" alt="decent"></img>
                             </div>
 
 
@@ -108,7 +108,7 @@ class Home extends Component {
                     <div className="row">
 
                         <div id="decent">
-                            <img src={bitcoin1} align="left"></img>
+                            <img src={bitcoin1} align="left" alt="bitcoin"></img>
                         </div>
                         
                         <h6>After the 2008 financial crash and bailout of the "to-big to fail" corporations and banks, </h6>

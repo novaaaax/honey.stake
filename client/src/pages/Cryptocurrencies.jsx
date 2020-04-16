@@ -93,7 +93,7 @@ class Cryptocurrencies extends Component {
                     backgroundColor: "#5FDADF"
                 }}>
                     <div className="card-image">
-                        <img src={coindesk} class="center"></img>
+                        <img src={coindesk} alt="coindesk"class="center"></img>
                     </div>
                     <div className="card-header">
                         <div className="card-title h5">CoinDesk</div>
@@ -113,7 +113,7 @@ class Cryptocurrencies extends Component {
                     backgroundColor: "#5FDADF"
                 }}>
                     <div className="card-image">
-                        <img src={cointelegraph} class="center"></img>
+                        <img src={cointelegraph} alt="cointelegraph"class="center"></img>
                     </div>
                     <div className="card-header">
                         <div className="card-title h5">COINTELEGRAPH</div>
@@ -134,7 +134,7 @@ class Cryptocurrencies extends Component {
                     backgroundColor: "#5FDADF"
                 }}>
                     <div className="card-image">
-                        <img src={blockchain} class="center"></img>
+                        <img src={blockchain} alt="blockchain"class="center"></img>
                     </div>
                     <div className="card-header">
                         <div className="card-title h5">Blockchain and Cryptocurrency</div>
