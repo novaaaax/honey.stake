@@ -1,12 +1,9 @@
 import React from 'react';
 import { Router } from "@reach/router";
-<<<<<<< HEAD
 
 import "./components/assets/scss/profile.scss"
-=======
 import "./components/assets/scss/home.scss";
 
->>>>>>> 8ce97dc71b43ed202b69e92c08f0248387b14d65
 // import { BrowserRouter, Route, Switch } from 'react-router-dom';
 // import Cryptomarkets from './components/Cryptomarkets';
 import "./components/assets/scss/cardano.scss";
@@ -33,11 +30,8 @@ import blockchain from "./components/blockchain.svg"
 import contact from "./components/contact.svg"
 import login from "./components/login.svg"
 import logout from "./components/logout.svg"
-<<<<<<< HEAD
 import Profile from "./pages/Profile"
-=======
 import signup from "./components/sign-up.svg"
->>>>>>> 8ce97dc71b43ed202b69e92c08f0248387b14d65
 
 
 function App() {
@@ -120,17 +114,6 @@ function App() {
 
       <Router>
         <Home path="/" />
-<<<<<<< HEAD
-        <Cryptocurrencies path="crypto" />
-        <Cardano path="Cardano" />
-        <StakingService path="Staking" />
-        <About path="About" />
-        <Contact path="Contact" />
-        <Profile path="profile" />
-        <Login path="login" />
-        <Logout path="Logout" />
-        <SignUp path="signup" />
-=======
         <Cryptocurrencies path="/crypto" />
         <Cardano path="/cardano" />
         <StakingService path="/staking" />
@@ -139,7 +122,6 @@ function App() {
         <Login path="/login" />
         <Logout path="/logout" />
         <SignUp path="/signup" />
->>>>>>> 8ce97dc71b43ed202b69e92c08f0248387b14d65
 
       </Router>
       {/* </div> */}
