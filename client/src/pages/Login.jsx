@@ -35,13 +35,13 @@ class SignUp extends Component {
                 console.log('login success')
                 console.log(response.data)
                 // localStorage.setItem("name", name)
-                // window.location.replace("http://localhost:3000/profile")
+                window.location.replace("http://localhost:3000/profile")
                 console.log(response.data.name)
                 this.setState({
                     errors: response.data,
                     name: response.data.name
                 })
-                localStorage.setItem(this.state.name, JSON.stringify(response.data.name))
+                localStorage.setItem("firstName", response.data.name)
             } else {
                 console.log('sign in error')
                 return;

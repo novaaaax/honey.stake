@@ -120,6 +120,7 @@ function App() {
         <Login path="/login" />
         <Logout path="/api/logout" />
         <SignUp path="/signup" />
+        <Profile path="/profile"></Profile>
 
       </Router>
       {/* </div> */}
