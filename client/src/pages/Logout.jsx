@@ -1,36 +1,34 @@
 import React, { Component } from "react"
-import React from "react";
-// import { Redirect } from "react-router-dom";
-// import { Link, useHistory } from "react-router-dom";
+import axios from 'axios'
 
-// export default Logout;
-// class Logout extends Component {
-//     state = {
-//         navigate: false
 
-//     };
-//     logout = () => {
-//         localStorage.clear("token");
-//         this.setState({ navigate: true });
-//         console.log(n)
-//     };
-//     render() {
-//         const { navigate } = this.state;
-//         if (navigate) {
-//             return <Redirect to ="/" push={true} />
-//         }
-//         return (
-//         <>
-//             <a 
-//             aria-current="page" 
-//             href="/logout"
-//             onClick={()=>this.setState({navigate:true})}
-//             >Logout
-//            </a>
-//         </>
+class Logout extends Component {
+    constructor(props){
+        super(props)
+        this.state = {
+            endSession: {}
+        }
+        this.handleSession = this.handleSession.bind(this)
+    }
 
-//         )
-//     }
-// }
+    handleSession(){
+        axios.post('/api/logout', {
+            
+        })
+    }
 
-// export default Logout
+
+render() {
+return(
+    <div>Logout</div>
+
+
+
+
+)
+}
+
+
+}
+
+export default Logout

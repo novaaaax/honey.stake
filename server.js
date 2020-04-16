@@ -68,11 +68,11 @@ app.post("/api/login", async (req, res) => {
     const user = await db.User.findOne({email})
     if(!user) {
       errors.email = 'User not found'
-      return res.status(404).json(errors)
+      return res.status(404).json({userNotFound: "Not Found"})
     }
     const isMatch = await bcrypt.compare(password, user.password)
     if(isMatch){
-      res.json({sucess: true, id: user._id})
+      res.json({sucess: true, id: user._id, name: user.first_name})
       const payload = {
         id: user._id
       }
@@ -90,6 +90,28 @@ app.post("/api/login", async (req, res) => {
     console.log(err)
   }
 })
+
+app.get("/api/login", async (req, res) => {
+  const errors = {}
+  const {password, email} = req.param.id
+  console.log(email)
+  const user = await db.User('first_name').find()
+ .then((userData) => res.send(userData))
+})
+
+app.post('/api/logout', async (req, res) => {
+  // Log user out of the application
+  try {
+      req.user.tokens = req.user.tokens.filter((token) => {
+          return token.token != req.token
+      })
+      await req.user.save()
+      res.send()
+  } catch (error) {
+      res.status(500).send(error)
+  }
+})
+
 // Start the API server
 app.listen(PORT, function() {
   console.log(`🌎  ==> API Server now listening on PORT ${PORT}!`);

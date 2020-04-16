@@ -11,6 +11,7 @@ class About extends Component {
                         top: "70px",
                         borderRadius:"12px",
                         width: "100%",
+                        backgroundColor:"#5FDADF"
                 }}>
                     <div className="card-header">
                         <div className="card-title h5"><strong>Develpoment Team</strong></div>

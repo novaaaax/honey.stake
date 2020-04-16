@@ -1,5 +1,7 @@
 import React from 'react';
 import { Router } from "@reach/router";
+
+import "./components/assets/scss/profile.scss"
 import "./components/assets/scss/home.scss";
 
 // import { BrowserRouter, Route, Switch } from 'react-router-dom';
@@ -12,10 +14,10 @@ import Home from "./pages/Home";
 import Cardano from "./pages/Cardano";
 import Cryptocurrencies from "./pages/Cryptocurrencies";
 import StakingService from "./pages/StakingService";
-import Contact from "./pages/Contact";
+// import Contact from "./pages/Contact";
 import SignUp from "./pages/SignUp";
 import Login from "./pages/Login";
-// import Logout from "./pages/Logout";
+import Logout from "./pages/Logout";
 import cardano from './components/cardano.svg';
 // import homeIcon from "./components/home-outline.svg"
 // import Crypto from "./components/cash-outline.svg"
@@ -28,6 +30,7 @@ import blockchain from "./components/blockchain.svg"
 import contact from "./components/contact.svg"
 import login from "./components/login.svg"
 import logout from "./components/logout.svg"
+import Profile from "./pages/Profile"
 import signup from "./components/sign-up.svg"
 
 
@@ -63,11 +66,11 @@ function App() {
       path: "/about",
       icon: team
     },
-    {
-      text: "Contact",
-      path: "/contact ",
-      icon: contact
-    },
+    // {
+    //   text: "Contact",
+    //   path: "/contact ",
+    //   icon: contact
+    // },
     {
       text: "SignUp",
       path: "/signup ",
@@ -80,8 +83,13 @@ function App() {
     },
     {
       text: "Logout",
-      path: "/logout",
+      path: "/api/logout",
       icon: logout
+    },
+    {
+      text: "Profile",
+      path: "/profile",
+      icon: ""
     }
 
 
@@ -110,10 +118,11 @@ function App() {
         <Cardano path="/cardano" />
         <StakingService path="/staking" />
         <About path="/about" />
-        <Contact path="/contact" />
+        {/* <Contact path="/contact" /> */}
         <Login path="/login" />
-        {/* <Logout path="/logout" /> */}
+        <Logout path="/api/logout" />
         <SignUp path="/signup" />
+        <Profile path="/profile"></Profile>
 
       </Router>
       {/* </div> */}

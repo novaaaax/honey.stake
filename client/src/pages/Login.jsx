@@ -9,8 +9,8 @@ class SignUp extends Component {
         this.state = {
             email: "",
             password: "",
+            name: "",
             errors: {}
-             
         }
         this.handleSubmit = this.handleSubmit.bind(this)
         this.handleChange = this.handleChange.bind(this)
@@ -27,19 +27,30 @@ class SignUp extends Component {
         console.log('form submitted')
         event.preventDefault();
         axios.post('/api/login', {
-                email: this.state.email,
-                password: this.state.password
+            email: this.state.email,
+            password: this.state.password
         }).then(response => {
             console.log(response)
             if (response.data) {
                 console.log('login success')
-                // window.location.replace("http://localhost:3000/profile")
+                console.log(response.data)
+                // localStorage.setItem("name", name)
+                window.location.replace("http://localhost:3000/profile")
+                console.log(response.data.name)
+                this.setState({
+                    errors: response.data,
+                    name: response.data.name
+                })
+                localStorage.setItem("firstName", response.data.name)
             } else {
                 console.log('sign in error')
                 return;
             }
         }).catch(err => {
             console.log(err)
+            this.setState({
+                errors: err
+            })
         })
     }
     render() {
@@ -48,11 +59,13 @@ class SignUp extends Component {
                 style={{
                     paddingTop: "100px"
                 }}>
+                <small>{this.state.name}</small>
                 <form className="form-group">
                     <label className="form-label" for="input-example-1">Email</label>
                     <input className="form-input" type="email" name="email" value={this.state.email} id="input-example-1" onChange={this.handleChange} placeholder="Email" required />
                     <label className="form-label" for="input-example-1">Password</label>
                     <input className="form-input" type="password" name="password" value={this.state.password} id="input-example-1" onChange={this.handleChange} placeholder="Password" required />
+                    {this.state.errors.userNotFound && <small>{this.state.errors.userNotFound}</small>}
                     <button
                         type="submit"
                         style={{
