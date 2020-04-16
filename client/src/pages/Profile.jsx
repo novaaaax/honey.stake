@@ -9,15 +9,17 @@ class Profile extends Component {
             first_name: "",
             errors: {}
         }
-        this.handleSubmit = this.handleSubmit.bind(this)
+        // this.handleSubmit = this.handleSubmit.bind(this)
 
     }
+    //setting name tp profile page
     componentWillMount() {
         this.setState({
             first_name: localStorage.getItem("firstName")
         })
     }
-    handleSubmit() {
+    logout=()=> {
+        localStorage.removeItem("jwtToken")
         axios.post("/api/logout", {
 
         })
@@ -30,11 +32,9 @@ class Profile extends Component {
     render() {
         return (
             
-            <div onSubmit={this.handleSubmit} className="container"style={{
+            <div className="container"style={{
                 paddingTop: "60px",
                 textAlign:"center",
-            
-                
             }}>
                <h1 style={{
                    fontSize:"40px",
@@ -52,7 +52,7 @@ class Profile extends Component {
                      align:"center",
                  }}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt illum quas eos, vel voluptates consequatur sed nemo, exercitationem et unde minus distinctio iure iste maxime eaque officiis accusantium! Deserunt, placeat.</p>
                 </div>
-                <button type="submit">Logout</button>
+                <button onClick={this.logout} type="submit">Logout</button>
             </div>
         );
     }
