@@ -28,7 +28,7 @@ class Home extends Component {
                 }} id="welcome" className="hero column col-11 col-xs-12 container">
                     {/* <p> <img id="solve8" src={solve8} alt="solve"></p> */}
                     <h1>Welcome to Solve,</h1>
-                    <h3> we recognize that we must plant trees for the next generation and therefore, we are committed to take you on the Journey of awareness about cryptocurrencies and of decentralization.</h3>
+                    <h3> we recognize that we must plant trees for the next generation and therefore, we are committed to take you on the Journey of awareness about Cryptocurrencies, Cardano and Decentralization.</h3>
                     {/* </img> */}
                     {/* <h1> </h1>
                     <h3></h3> */}
@@ -51,7 +51,7 @@ class Home extends Component {
                                 <li>In Centralized systems you don't have control over your data </li>
                                 <li>You can lose your freedom of speech on a centralized platform and even be banned</li>
                                 <li>A very good example of the ramifications of a fully centralized system is China. A country that is using its digital power to control and suppress the people, where basic rights are being taken away, censorship is taking over and a social score is being implemented. </li>
-                                   {/* <li></li> */} 
+                                 
                             </ul>
 
                         </div>
@@ -114,16 +114,17 @@ class Home extends Component {
                         <h6>After the 2008 financial crash and bailout of the "to-big to fail" corporations and banks, </h6>
                         <h4>a new system of technology emerged!</h4>
                         <ul>
-                            <li>This system is like the internet where people can build on top ot it</li>
+                            <li>This system is like the internet where people can build on top of it</li>
                             <li>It is fully transparent </li>
-                            <li>censorship resistent</li>
+                            <li>Censorship resistent</li>
                             <li>Not only can you own a pice of the system but you can transfer it</li>
                             <li>It is borderless </li>
                             <li>This system is deflationary</li>
                             <li>It is used as a store of value because of its set supply</li>
                             <li>Bitcoin is the first generation of cryptocurrencies aka. digital gold</li>
+                            {/* <li> Decentralization began with bitcoin and continues with to expand throughout the globe</li> */}
                         </ul>
-                        <h3>We sincerely believe that one of the projects that operate in a fully decentralized way is Cardano.</h3>
+                        <h3>We sincerely believe that decentralization began with bitcoin and that it continues to expand its reach with <a href="/cardano">Cardano</a>.</h3>
 
 
                     </div>
