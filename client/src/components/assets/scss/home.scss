@@ -1,5 +1,9 @@
 #master{
     background-color: #07454715 ;
+
+    li{
+        list-style-type: none;
+    }
 #welcome{
     padding-top:110px ; 
     // background-color: #5fdadf;
@@ -66,7 +70,7 @@
     img{
         width: 40%;
         // height: 90%;
-       margin-top:-18px;
+       margin-top: 0px;
        padding-left: 20px;
        
         height: 340px;
