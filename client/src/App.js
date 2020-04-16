@@ -17,7 +17,6 @@ import StakingService from "./pages/StakingService";
 // import Contact from "./pages/Contact";
 import SignUp from "./pages/SignUp";
 import Login from "./pages/Login";
-import Logout from "./pages/Logout";
 import cardano from './components/cardano.svg';
 // import homeIcon from "./components/home-outline.svg"
 // import Crypto from "./components/cash-outline.svg"
@@ -27,11 +26,11 @@ import team from "./components/team.svg"
 import wallet from "./components/wallet.svg"
 import home from "./components/home.svg"
 import blockchain from "./components/blockchain.svg"
-import contact from "./components/contact.svg"
 import login from "./components/login.svg"
 import logout from "./components/logout.svg"
 import Profile from "./pages/Profile"
 import signup from "./components/sign-up.svg"
+import profile from "./components/avatar.svg"
 
 
 function App() {
@@ -82,14 +81,9 @@ function App() {
       icon: login
     },
     {
-      text: "Logout",
-      path: "/logout",
-      icon: logout
-    },
-    {
       text: "Profile",
       path: "/profile",
-      icon: ""
+      icon: profile
     }
 
 
@@ -120,8 +114,8 @@ function App() {
         <About path="/about" />
         {/* <Contact path="/contact" /> */}
         <Login path="/login" />
-        <Logout path="/logout" />
         <SignUp path="/signup" />
+        <Profile path="/profile"></Profile>
 
       </Router>
       {/* </div> */}

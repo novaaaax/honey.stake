@@ -38,7 +38,7 @@ class SignUp extends Component {
             console.log(response)
             if (response.data) {
                 console.log('signup success')
-                window.location.replace("http://localhost:3000/login")
+                window.location.replace("/login")
                 this.setState({
                     redirectTo: "/login",
                     errors: response.data

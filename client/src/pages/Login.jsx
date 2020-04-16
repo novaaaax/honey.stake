@@ -2,6 +2,7 @@ import React, { Component } from "react"
 import axios from "axios"
 
 
+
 class SignUp extends Component {
     constructor(props) {
         super(props);
@@ -9,6 +10,7 @@ class SignUp extends Component {
         this.state = {
             email: "",
             password: "",
+            name: "",
             errors: {}
         }
         this.handleSubmit = this.handleSubmit.bind(this)
@@ -33,10 +35,17 @@ class SignUp extends Component {
             if (response.data) {
                 console.log('login success')
                 console.log(response.data)
-                window.location.replace("http://localhost:3000/profile")
+                console.log(response.data.id)
+                // localStorage.setItem("name", name)
+                window.location.replace("/profile")
+                console.log(response.data.name)
                 this.setState({
-                    errors: response.data
+                    errors: response.data,
+                    name: response.data.name,
+                    token: response.data.id
                 })
+                localStorage.setItem("firstName", response.data.name)
+                localStorage.setItem("jwtToken", response.data.id)
             } else {
                 console.log('sign in error')
                 return;
