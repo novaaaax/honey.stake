@@ -24,7 +24,7 @@ class StakingService extends Component {
                             backgroundColor: "#306BAC"
                         }}>
                             <div className="card-image">
-                                <img src={staking} class="center"></img>
+                                <img src={staking} class="center"alt="staking" ></img>
                             </div>
                             <div className="card-header">
 
