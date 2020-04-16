@@ -106,17 +106,6 @@ function App() {
 
       <Router>
         <Home path="/" />
-<<<<<<< HEAD
-        <Cryptocurrencies path="crypto" />
-        <Cardano path="cardano" />
-        <StakingService path="staking" />
-        <About path="about" />
-        <Contact path="contact" />
-        <Login path="login" />
-        <Logout path="logout" />
-        <SignUp path="signUp" />
-=======
-        info
         <Cryptocurrencies path="/crypto" />
         <Cardano path="/cardano" />
         <StakingService path="/staking" />
@@ -125,7 +114,6 @@ function App() {
         <Login path="/login" />
         <Logout path="/logout" />
         <SignUp path="/signup" />
->>>>>>> 27c0394af004bc95ae01f03e9ef79b19176bd651
 
       </Router>
       {/* </div> */}
