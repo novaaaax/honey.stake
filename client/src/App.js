@@ -83,7 +83,7 @@ function App() {
     },
     {
       text: "Logout",
-      path: "/logout",
+      path: "/api/logout",
       icon: logout
     },
     {
@@ -120,8 +120,9 @@ function App() {
         <About path="/about" />
         {/* <Contact path="/contact" /> */}
         <Login path="/login" />
-        <Logout path="/logout" />
+        <Logout path="/api/logout" />
         <SignUp path="/signup" />
+        <Profile path="/profile"></Profile>
 
       </Router>
       {/* </div> */}

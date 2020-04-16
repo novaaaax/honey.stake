@@ -72,7 +72,7 @@ app.post("/api/login", async (req, res) => {
     }
     const isMatch = await bcrypt.compare(password, user.password)
     if(isMatch){
-      res.json({sucess: true, id: user._id})
+      res.json({sucess: true, id: user._id, name: user.first_name})
       const payload = {
         id: user._id
       }
@@ -96,11 +96,20 @@ app.get("/api/login", async (req, res) => {
   const {password, email} = req.param.id
   console.log(email)
   const user = await db.User('first_name').find()
- .then((userData) => res.json(userData))
+ .then((userData) => res.send(userData))
 })
 
-app.get("/api/logout", async (req, res) => {
-  
+app.post('/api/logout', async (req, res) => {
+  // Log user out of the application
+  try {
+      req.user.tokens = req.user.tokens.filter((token) => {
+          return token.token != req.token
+      })
+      await req.user.save()
+      res.send()
+  } catch (error) {
+      res.status(500).send(error)
+  }
 })
 
 // Start the API server

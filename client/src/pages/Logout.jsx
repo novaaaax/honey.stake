@@ -1,4 +1,5 @@
 import React, { Component } from "react"
+import axios from 'axios'
 
 
 class Logout extends Component {
@@ -11,7 +12,9 @@ class Logout extends Component {
     }
 
     handleSession(){
-        
+        axios.post('/api/logout', {
+            
+        })
     }
 
 

@@ -9,30 +9,32 @@ class Profile extends Component {
             first_name: "",
             errors: {}
         }
-        this.handleLoad = this.handleLoad.bind(this)
+        this.handleSubmit = this.handleSubmit.bind(this)
+
     }
-    handleLoad(event) {
-        event.preventDefault();
-        axios.post("/api/login/:id", {
-            first_name: this.state.first_name
-        }).then(response => {
-            console.log(response)
-            if (response.data) {
-                console.log(response.data)
-                this.setState({
-                    errors: response.data
-                })
-            }
-        }).catch(err => {
-            this.setState({
-                errors: err
-            })
+    componentWillMount() {
+        this.setState({
+            first_name: localStorage.getItem("firstName")
         })
+    }
+    handleSubmit() {
+        axios.post("/api/logout", {
+
+        })
+            .then(response => {
+                console.log('logged out')
+                console.log(response)
+                localStorage.clear()
+            })
     }
     render() {
         return (
-            <div>
-                <p onLoad={this.handleLoad}>{this.state.first_name}</p>
+            <div onSubmit={this.handleSubmit} style={{
+                paddingTop: "60px"
+            }}>
+                <h1>Hello {this.state.first_name}</h1>
+
+                <button type="submit">Logout</button>
             </div>
         );
     }
