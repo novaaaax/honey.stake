@@ -8,6 +8,7 @@ import decent from "../components/assets/img/decent.png"
 import solve8 from "../components/assets/img/solve8.jpeg"
 // import solve7 from "../components/assets/img/solve7.jpeg"
 import bitcoin1 from "../components/assets/img/bitcoin1.jpeg"
+import sky from "../components/assets/img/sky1.jpeg"
 class Home extends Component {
     render() {
         return (
@@ -15,7 +16,8 @@ class Home extends Component {
 
 
                 <div style={{
-                    backgroundImage: "url(" + solve8 + ")",
+                    // backgroundImage: "url(" + sky + ")",
+                    // background:""
                     backgroundPosition: "center",
                     backgroundSize: "cover"
                     // backgroundImage: solve8
@@ -41,7 +43,7 @@ class Home extends Component {
                     <div className="row">
                         <div className="column1">
                             <div >
-                                <img src={cent} align="center"></img>
+                                <img src={cent} align="right"></img>
                             </div>
                             <h5>First lets take a look at what centralized systems look like vs. decentralized systems</h5>
                             <ul>
@@ -72,7 +74,7 @@ class Home extends Component {
                 <div id="decentralize" className="hero column col-11 col-xs-12 container">
                     <div className="row">
                         <div className="column2">
-                            <div id="decent">
+                            <div id="decent1">
                                 <img src={decent} align="left"></img>
                             </div>
 
@@ -107,8 +109,9 @@ class Home extends Component {
                 }}id="decentralize" className="hero column col-11 col-xs-12 container">
                     <div className="row">
 
-                        <div id="decent">
-                            <img src={bitcoin1} align="left"></img>
+                        <div id="decent2">
+
+                            <img style={{ height:"450px"}} src={bitcoin1} align="left"></img>
                         </div>
                         
                         <h6>After the 2008 financial crash and bailout of the "to-big to fail" corporations and banks, </h6>
@@ -124,7 +127,7 @@ class Home extends Component {
                             <li>Bitcoin is the first generation of cryptocurrencies aka. digital gold</li>
                             {/* <li> Decentralization began with bitcoin and continues with to expand throughout the globe</li> */}
                         </ul>
-                        <h3>We sincerely believe that decentralization began with bitcoin and that it continues to expand its reach with <a href="/cardano">Cardano</a>.</h3>
+                        <h3>We sincerely believe that decentralization began with bitcoin and that it continues to expand its reach with <a color="red" href="/cardano">Cardano</a>.</h3>
 
 
                     </div>
@@ -179,7 +182,7 @@ class Home extends Component {
 
 
 
-                <div className="form-group">
+                {/* <div className="form-group">
                     <div className="col-3">
                         <label className="form-label" textalign="center" htmlFor="input-example-8">Sign up for our newsletter</label>
                     </div>
@@ -225,7 +228,7 @@ class Home extends Component {
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> */}
 
 
             </div>
