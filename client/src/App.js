@@ -17,7 +17,6 @@ import StakingService from "./pages/StakingService";
 // import Contact from "./pages/Contact";
 import SignUp from "./pages/SignUp";
 import Login from "./pages/Login";
-import Logout from "./pages/Logout";
 import cardano from './components/cardano.svg';
 // import homeIcon from "./components/home-outline.svg"
 // import Crypto from "./components/cash-outline.svg"
@@ -82,11 +81,6 @@ function App() {
       icon: login
     },
     {
-      text: "Logout",
-      path: "/api/logout",
-      icon: logout
-    },
-    {
       text: "Profile",
       path: "/profile",
       icon: profile
@@ -120,7 +114,6 @@ function App() {
         <About path="/about" />
         {/* <Contact path="/contact" /> */}
         <Login path="/login" />
-        <Logout path="/api/logout" />
         <SignUp path="/signup" />
         <Profile path="/profile"></Profile>
 

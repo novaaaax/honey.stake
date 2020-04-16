@@ -130,55 +130,7 @@ class Home extends Component {
                     </div>
 
                 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                
                 <div className="form-group">
                     <div className="col-3">
                         <label className="form-label" textalign="center" htmlFor="input-example-8">Sign up for our newsletter</label>
