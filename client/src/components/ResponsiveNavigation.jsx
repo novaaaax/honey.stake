@@ -29,7 +29,12 @@ function ResponsiveNavigation({ navLinks, background, hoverBackground, linkColor
             onMouseLeave={() => setHoverIndex(-1)}
             style={{ background: hoverIndex === index ? (hoverBackground || "#999") : "" }}
           >
+           
             <Link
+               
+              // {{if(path==="logout"){
+              //   localStorage.removeItem('Bear')
+              // }}},
               to={link.path}
               style={{ color: linkColor }}
             >
