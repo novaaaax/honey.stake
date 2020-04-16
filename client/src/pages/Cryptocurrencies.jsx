@@ -39,15 +39,15 @@ class Cryptocurrencies extends Component {
         return (
 
             <>
-                <table className="table table-striped table-hover">
+                <table className="table table-striped table-hover col-xs-12" style={{
+                    marginTop:"50px",
+                    backgroundColor:"lightgray"
+                }}>
                     <thead>
                         <tr>
                             <th>Name</th>
                             <th>USD</th>
                             <th>EUR</th>
-                            <th>Change</th>
-                            <th>Chart</th>
-
                         </tr>
                     </thead>
                     <tbody>
@@ -61,8 +61,6 @@ class Cryptocurrencies extends Component {
                             <td>
                                 {this.state.cryptoInfo && this.state.cryptoInfo.BTC && this.state.cryptoInfo.BTC.USD && this.state.cryptoInfo.BTC.EUR}
                             </td>
-                            <td>Change{}</td>
-                            <td>Chart</td>
                         </tr>
                         <tr className="active">
                             <td>
@@ -74,8 +72,6 @@ class Cryptocurrencies extends Component {
                             <td>
                                 {this.state.cryptoInfo && this.state.cryptoInfo.ETH && this.state.cryptoInfo.ETH.USD && this.state.cryptoInfo.ETH.EUR}
                             </td>
-                            <td>Change{}</td>
-                            <td>Chart</td>
                         </tr>
                         <tr className="active">
                             <td>
@@ -87,19 +83,17 @@ class Cryptocurrencies extends Component {
                             <td>
                                 {this.state.cryptoInfo && this.state.cryptoInfo.ADA && this.state.cryptoInfo.ADA.USD && this.state.cryptoInfo.ADA.EUR}
                             </td>
-                            <td>Change{}</td>
-                            <td>Chart</td>
                         </tr>
                     </tbody>
                 </table>
 
-                <div className="card" style={{
+                <div className="card col-xs-12" style={{
                     textAlign: "center",
                     padding: "20px",
                     backgroundColor: "#5FDADF"
                 }}>
-                    <div className="card-image">
-                        <img src={coindesk} class="center"></img>
+                    <div className="card-image col-xs-12">
+                        <img src={coindesk} alt="coindesk"class="center"></img>
                     </div>
                     <div className="card-header">
                         <div className="card-title h5">CoinDesk</div>
@@ -113,13 +107,13 @@ class Cryptocurrencies extends Component {
                     </div>
                 </div>
 
-                <div className="card" style={{
+                <div className="card col-xs-12" style={{
                     textAlign: "center",
                     padding: "20px",
                     backgroundColor: "#5FDADF"
                 }}>
-                    <div className="card-image">
-                        <img src={cointelegraph} class="center"></img>
+                    <div className="card-image col-xs-12">
+                        <img src={cointelegraph} alt="cointelegraph"class="center"></img>
                     </div>
                     <div className="card-header">
                         <div className="card-title h5">COINTELEGRAPH</div>
@@ -134,13 +128,13 @@ class Cryptocurrencies extends Component {
                 </div>
 
 
-                <div className="card" style={{
+                <div className="card col-xs-12" style={{
                     textAlign: "center",
                     padding: "20px",
                     backgroundColor: "#5FDADF"
                 }}>
-                    <div className="card-image">
-                        <img src={blockchain} class="center"></img>
+                    <div className="card-image col-xs-12">
+                        <img src={blockchain} alt="blockchain"class="center"></img>
                     </div>
                     <div className="card-header">
                         <div className="card-title h5">Blockchain and Cryptocurrency</div>

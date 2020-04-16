@@ -28,7 +28,7 @@ class Home extends Component {
                 }} id="welcome" className="hero column col-11 col-xs-12 container">
                     {/* <p> <img id="solve8" src={solve8} alt="solve"></p> */}
                     <h1>Welcome to Solve,</h1>
-                    <h3> we recognize that we must plant trees for the next generation and therefore, we are committed to take you on the Journey of awareness about Cryptocurrencies, Cardano and Decentralization.</h3>
+                    <h3> we recognize that we must pave the way for the next generation and therefore, we are committed to take you on the Journey of awareness about Cryptocurrencies, Cardano and Decentralization.</h3>
                     {/* </img> */}
                     {/* <h1> </h1>
                     <h3></h3> */}
@@ -41,7 +41,7 @@ class Home extends Component {
                     <div className="row">
                         <div className="column1">
                             <div >
-                                <img src={cent} align="right"></img>
+                                <img src={cent} align="right" alt="cent"></img>
                             </div>
                             <h5>First lets take a look at what centralized systems look like vs. decentralized systems</h5>
                             <ul>
@@ -73,7 +73,7 @@ class Home extends Component {
                     <div className="row">
                         <div className="column2">
                             <div id="decent">
-                                <img src={decent} align="left"></img>
+                                <img src={decent} align="left" alt="decent"></img>
                             </div>
 
 
@@ -108,7 +108,7 @@ class Home extends Component {
                     <div className="row">
 
                         <div id="decent">
-                            <img src={bitcoin1} align="left"></img>
+                            <img src={bitcoin1} align="left" alt="bitcoin"></img>
                         </div>
                         
                         <h6>After the 2008 financial crash and bailout of the "to-big to fail" corporations and banks, </h6>

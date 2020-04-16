@@ -2,6 +2,7 @@ import React, { Component } from "react"
 import axios from "axios"
 
 
+
 class SignUp extends Component {
     constructor(props) {
         super(props);
@@ -34,14 +35,17 @@ class SignUp extends Component {
             if (response.data) {
                 console.log('login success')
                 console.log(response.data)
+                console.log(response.data.id)
                 // localStorage.setItem("name", name)
-                window.location.replace("http://localhost:3000/profile")
+                window.location.replace("/profile")
                 console.log(response.data.name)
                 this.setState({
                     errors: response.data,
-                    name: response.data.name
+                    name: response.data.name,
+                    token: response.data.id
                 })
                 localStorage.setItem("firstName", response.data.name)
+                localStorage.setItem("jwtToken", response.data.id)
             } else {
                 console.log('sign in error')
                 return;
@@ -59,7 +63,6 @@ class SignUp extends Component {
                 style={{
                     paddingTop: "100px"
                 }}>
-                <small>{this.state.name}</small>
                 <form className="form-group">
                     <label className="form-label" for="input-example-1">Email</label>
                     <input className="form-input" type="email" name="email" value={this.state.email} id="input-example-1" onChange={this.handleChange} placeholder="Email" required />
