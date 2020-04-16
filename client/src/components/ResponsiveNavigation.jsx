@@ -8,7 +8,7 @@ function ResponsiveNavigation({ navLinks, background, hoverBackground, linkColor
   const [navOpen, setNavOpen] = useState(false)
   console.log(hoverBackground, linkColor, logo)
 
-
+  // function toggler()
   return (
 
     <nav

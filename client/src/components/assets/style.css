@@ -1,0 +1,26 @@
+
+#welcome{
+   padding-top:120px ; 
+   background-color: #5fdadf;
+   color: rgb(53, 52, 52);
+   
+   width: 100%;
+   padding-bottom: 20px;
+  
+   
+
+
+}
+h1{
+    text-align: left;
+}
+h3{
+    text-align: center;
+}
+
+
+/* paddingTop:"120px",
+backgroundColor: "#74e2ff",
+color: "#black",
+borderRadius: "25px",
+textAlign: "center" */

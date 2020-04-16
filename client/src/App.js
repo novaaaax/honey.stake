@@ -1,7 +1,12 @@
 import React from 'react';
 import { Router } from "@reach/router";
+<<<<<<< HEAD
 
 import "./components/assets/scss/profile.scss"
+=======
+import "./components/assets/scss/home.scss";
+
+>>>>>>> 8ce97dc71b43ed202b69e92c08f0248387b14d65
 // import { BrowserRouter, Route, Switch } from 'react-router-dom';
 // import Cryptomarkets from './components/Cryptomarkets';
 
@@ -12,13 +17,13 @@ import Home from "./pages/Home";
 import Cardano from "./pages/Cardano";
 import Cryptocurrencies from "./pages/Cryptocurrencies";
 import StakingService from "./pages/StakingService";
-import Contact from "./pages/Contact";
+// import Contact from "./pages/Contact";
 import SignUp from "./pages/SignUp";
 import Login from "./pages/Login";
 import Logout from "./pages/Logout";
 import cardano from './components/cardano.svg';
 // import homeIcon from "./components/home-outline.svg"
-import Crypto from "./components/cash-outline.svg"
+// import Crypto from "./components/cash-outline.svg"
 import stake from "./components/stakeholder.svg"
 import logo from "./components/logo.svg"
 import team from "./components/team.svg"
@@ -28,7 +33,11 @@ import blockchain from "./components/blockchain.svg"
 import contact from "./components/contact.svg"
 import login from "./components/login.svg"
 import logout from "./components/logout.svg"
+<<<<<<< HEAD
 import Profile from "./pages/Profile"
+=======
+import signup from "./components/sign-up.svg"
+>>>>>>> 8ce97dc71b43ed202b69e92c08f0248387b14d65
 
 
 function App() {
@@ -63,15 +72,15 @@ function App() {
       path: "/about",
       icon: team
     },
-    {
-      text: "Contact",
-      path: "/contact ",
-      icon: contact
-    },
+    // {
+    //   text: "Contact",
+    //   path: "/contact ",
+    //   icon: contact
+    // },
     {
       text: "SignUp",
       path: "/signup ",
-      icon: ""
+      icon: signup
     },
     {
       text: "Login",
@@ -91,7 +100,7 @@ function App() {
 
 
   ]
-
+  // function toggle()
 
   return (
 
@@ -105,10 +114,13 @@ function App() {
         linkColor="#777"
         
       />
+
     
-      
+      {/* <div className="mob"> */}
+
       <Router>
         <Home path="/" />
+<<<<<<< HEAD
         <Cryptocurrencies path="crypto" />
         <Cardano path="Cardano" />
         <StakingService path="Staking" />
@@ -118,9 +130,19 @@ function App() {
         <Login path="login" />
         <Logout path="Logout" />
         <SignUp path="signup" />
+=======
+        <Cryptocurrencies path="/crypto" />
+        <Cardano path="/cardano" />
+        <StakingService path="/staking" />
+        <About path="/about" />
+        {/* <Contact path="/contact" /> */}
+        <Login path="/login" />
+        <Logout path="/logout" />
+        <SignUp path="/signup" />
+>>>>>>> 8ce97dc71b43ed202b69e92c08f0248387b14d65
 
       </Router>
-
+      {/* </div> */}
     </div>
 
 
