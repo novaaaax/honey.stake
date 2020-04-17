@@ -26,7 +26,7 @@ class Profile extends Component {
     }
     render() {
         return (
-
+            <div className="all">
             <div className="container" style={{
                 paddingTop: "60px",
                 textAlign: "center",
@@ -50,6 +50,7 @@ class Profile extends Component {
                     }}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt illum quas eos, vel voluptates consequatur sed nemo, exercitationem et unde minus distinctio iure iste maxime eaque officiis accusantium! Deserunt, placeat.</p>
                 </div>
                 <button onClick={this.logout} type="submit">Logout</button>
+            </div>
             </div>
         );
     }
