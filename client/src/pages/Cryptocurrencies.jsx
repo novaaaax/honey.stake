@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import axios from "axios";
 import dotenv from "dotenv";
-import "../components/style.css"
+import "../components/Style.css"
 import coindesk from "./coindesk.png"
 import cointelegraph from "./cointelegraph.png"
 import blockchain from "./blockchain.png"
@@ -113,9 +113,9 @@ class Cryptocurrencies extends Component {
                 <div class="card-footer">
                     <a href="https://www.coindesk.com/" target="_blank" rel="noopener noreferrer"><button>Click Here</button></a>
                 </div>
-                <div class="card-footer">
+                {/* <div class="card-footer">
                     <button onClick="window.location.href = 'https://www.coindesk.com/';">Click Here</button>
-                </div>
+                </div> */}
             </div>
 
             <div className="card col-xs-12" style={{
@@ -136,9 +136,9 @@ class Cryptocurrencies extends Component {
                 <div class="card-footer">
                     <a href="https://www.cointelegraph.com/" target="_blank" rel="noopener noreferrer"><button>Click Here</button></a>
                 </div>
-                <div class="card-footer">
+                {/* <div class="card-footer">
                     <button onClick="window.location.href = 'https://cointelegraph.com/';">Click Here</button>
-                </div>
+                </div> */}
             </div>
 
 

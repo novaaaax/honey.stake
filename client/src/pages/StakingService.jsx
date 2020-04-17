@@ -5,7 +5,7 @@ import staking from "./staking.png"
 class StakingService extends Component {
     render() {
         return (
-            <div >
+            <div className="all" >
                 <div style={{
                     paddingTop: "120px",
                     backgroundColor: "#5FDADF",

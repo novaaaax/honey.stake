@@ -40,7 +40,7 @@ class Cardano extends Component {
                         <div className="column">
 
                             <h5>We are exited about Cardano</h5>
-                            <h5>First blockchain protocol evolved out of a scientific philosophy and a research-first approach</h5>
+                            <h5>The First blockchain protocol evolved out of a scientific philosophy and a research-first approach</h5>
                             <ul>
                                 <li>Cardano is a public blockchain and a cryptocurrency project </li>
                                 <li>Build from ground up by a large team of expert researchers and engineers from IOHK using peer reviewed academic papers </li>
